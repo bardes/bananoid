@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <allegro5/allegro.h>
 
-
+#include "raquete.h"
 
 int main()
 {
