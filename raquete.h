@@ -13,6 +13,6 @@ struct bn_raquete_t
 typedef struct bn_raquete_t BN_RAQUETE;
 
 /* Desenha a raquete no "target" atual */
-void desenhaRaquete(const BN_RAQUETE *raq);
+void bn_desenhaRaquete(const BN_RAQUETE *raq);
 
 #endif

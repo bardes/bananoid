@@ -9,6 +9,12 @@ int main()
     ALLEGRO_DISPLAY *tela = NULL;           /*Ponteiro para tela do jogo*/
     ALLEGRO_EVENT_QUEUE *eventos = NULL;    /*Ponteiro pra fila de eventos*/
     
+    BN_RAQUETE r;
+    r.x = 300;
+    r.y = 650;
+    r.alt = 16;
+    r.larg = 128;
+    
     /*Inicializando e verificando erro ao executar biblioteca grafica*/ 
     if(!al_init())
     {
@@ -42,6 +48,8 @@ int main()
     /*Registrar a fonte de eventos da tela*/
     al_register_event_source(eventos, al_get_display_event_source(tela));
     
+    al_set_target_bitmap(tela);
+    
     while (1)
     {
         ALLEGRO_EVENT evt;
@@ -54,6 +62,11 @@ int main()
         {
             break;
         }
+        
+        /* Desenhando tuti */
+        al_clear_to_color(al_map_rgb(0,0,0));
+        bn_desenhaRaquete(&r);
+        al_flip_display();        
     }
     
     /*Liberando memoria antes de fechar o programa*/
