@@ -1,3 +1,13 @@
-TODO - Descrição do jogo...
-Yay, testando de novo
-Ok, chega... Vamos deixar com https mesmo.
+================== Compilação ========================
+Usando gcc o comando seguinte comando deve compilar o jogo:
+"gcc bananoid.c raquete.c bola.c bloco.c -lallegro -lallegro_primitives -lallegro_font -lallegro_ttf -Wall"
+(assumindo que a biblioteca gráfica allegro já esteja instalada)
+
+=================== Comandos =========================
+Espaço      ->  Começar/parar jogo
+M           ->  Alternar entre modo teclado e mouse
+A           ->  Liga/desliga "modo automático"
+W/S         ->  Aumenta/Diminue a velocidade da boal
+DIR/ESQ     ->  Move a raquete
+CIMA/BAIXO  ->  Aumenta/Diminue a velocidade da raquete
+ENTER       ->  Ativar modo "frame a frame"

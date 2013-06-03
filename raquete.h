@@ -18,6 +18,6 @@ typedef struct bn_raquete_t BN_RAQUETE;
 /* Desenha a raquete no "target" atual */
 void bn_desenhaRaquete(const BN_RAQUETE *raq);
 
-char bn_colidindo(const BN_RAQUETE* r, const BN_BOLA* b);
+char bn_colideRaquete(const BN_RAQUETE* r, const BN_BOLA* b);
 
 #endif
